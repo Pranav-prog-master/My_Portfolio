@@ -52,21 +52,21 @@ function article_2() {
 			"Pranav B",
 			"Pranav Badgujar"
 		],
-		style: `
-				.article-content {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-				}
+		// style: `
+		// 		.article-content-man {
+		// 			display: flex;
+		// 			flex-direction: column;
+		// 			align-items: center;
+		// 		}
 
-				.randImage {
-					align-self: center;
-					outline: 2px solid red;
-				}
-				`,
+		// 		.randImage {
+		// 			align-self: center;
+		// 			outline: 2px solid red;
+		// 		}
+		// 		`,
 		body: (
 			<React.Fragment>
-				<div className="article-content">
+				<div className="article-content-man">
 					<div className="paragraph">Content of article 1</div>
 					<img
 						src="https://picsum.photos/200/300"
