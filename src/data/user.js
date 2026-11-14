@@ -16,13 +16,13 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer, and Data Science.",
+		title: "Backend Developer , Node.js & Python , Scalable APIs & Data Analytics",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"I am a backend developer with expertise in Node.js and Python. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
 	},
 
 	about: {
-		title: "I’m Pranav B. I live in Surat, where I design the future.",
+		title: "I'm Pranav B. I live in Surat, where I design the future, and I study in Ahmedabad.",
 		description:
 			"My expertise sits at the crossroads of backend engineering and data science. I construct the robust, scalable architecture required for modern software and then use the data flowing through it to uncover insights, predict trends, and embed machine learning directly into the user experience. Ultimately, I create products that are not only well-engineered but also data-smart.",
 	},
@@ -35,12 +35,12 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "GradLink Backend",
 			description:
-				"A dynamic and responsive to-do list application designed to help you manage your daily tasks. Built from the ground up using the MERN stack, it features a clean user interface and a robust backend to ensure your tasks are always saved and accessible.",
+				"Built a Node.js API with role-based access control (RBAC) and normalized data models, cutting data-retrieval time by 30% for 5,000+ users. Added analytics dashboards (+40% stakeholder insight adoption) and a modular architecture that reduced coupling by 25% and sped up releases by 2 weeks.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
-			link: "https://github.com/Pranav-prog-master/TODO-LIST",
+			link: "https://github.com/Pranav-prog-master/Gralink_Backend",
 		},
 
 		{
@@ -77,6 +77,15 @@ const INFO = {
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
 			linkText: "View Project",
 			link: "https://github.com/Pranav-prog-master/Java_Project_Basics_to_Advances",
+		},
+
+		{
+			title: "Project 6",
+			description:
+				"Developed a low-latency async backend with FastAPI, secure authentication, and Pydantic data validation. Designed an extensible foundation for analytics integration and third-party services.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			linkText: "View Project",
+			link: "https://github.com/Pranav-prog-master/Python_BKD",
 		},
 	],
 };

@@ -5,10 +5,30 @@
 	--tertiary-color: #acacb4;
 	--quaternary-color: #e4e4e7;
 	--link-color: #14b8a6;
+	--bg-color: #ffffff;
+	--bg-side-color: #fafafa;
+	--bg-side-border: #f4f4f5;
+	--nav-bg: #ffffff;
+	--card-bg: #ffffff;
+	--card-border: #e4e4e7;
 	/* ---------------------- */
 
 	/* ------- fonts ------- */
 	--primary-font: "Heebo", sans-serif;
 	--secondary-font: "Roboto", sans-serif;
 	/* --------------------- */
+}
+
+[data-theme="dark"] {
+	--primary-color: #e4e4e7;
+	--secondary-color: #acacb4;
+	--tertiary-color: #65656d;
+	--quaternary-color: #27272a;
+	--link-color: #2dd4bf;
+	--bg-color: #18181b;
+	--bg-side-color: #111113;
+	--bg-side-border: #27272a;
+	--nav-bg: #27272a;
+	--card-bg: #27272a;
+	--card-border: #3f3f46;
 }

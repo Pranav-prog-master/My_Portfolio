@@ -13,26 +13,117 @@
 	top: 4vh;
 }
 
+/* Line 1: Title — single line */
+.contact-title {
+	margin-top: 120px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Line 2: Paragraph */
 .contact-subtitle {
+	margin-top: 20px;
+	line-height: 1.8;
 	width: 100% !important;
 }
 
-.contact-container {
+/* Line 3: Form + Socials side by side */
+.contact-bottom {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	margin-top: 120px;
+	flex-direction: row;
+	gap: 60px;
+	align-items: flex-start;
+	margin-top: 40px;
 }
 
-
-.socials-container {
-	display: flex;
-	flex-direction: column;
-	margin-top: 80px;
+.contact-form-wrapper {
+	flex: 1.2;
 }
 
-.contact-socials {
+.contact-socials-wrapper {
+	flex: 1;
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	flex-direction: column;
+	gap: 16px;
+	padding-top: 8px;
+}
+
+/* Form styles */
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: 12px 14px;
+	border-radius: 8px;
+	border: 1px solid var(--card-border);
+	background-color: var(--card-bg);
+	color: var(--primary-color);
+	font-size: 15px;
+	font-family: inherit;
+	resize: vertical;
+	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+	color: var(--tertiary-color);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	outline: none;
+	border-color: var(--link-color);
+}
+
+.contact-form button {
+	padding: 12px;
+	border-radius: 8px;
+	border: none;
+	background-color: var(--link-color);
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+	transition: background 0.3s ease, opacity 0.3s ease;
+	font-family: inherit;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+}
+
+.contact-form button:hover:not(:disabled) {
+	opacity: 0.85;
+}
+
+.contact-form button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.contact-status {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.contact-status.success {
+	color: #2cb67d;
+}
+
+.contact-status.error {
+	color: #e53e3e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.contact-title {
+		white-space: normal;
+	}
+
+	.contact-bottom {
+		flex-direction: column;
+	}
 }

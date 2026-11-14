@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../ThemeContext";
 
 import "./styles/navBar.css";
 
 const NavBar = (props) => {
 	const { active } = props;
+	const { theme, toggleTheme } = useTheme();
 
 	return (
 		<React.Fragment>
@@ -12,50 +14,25 @@ const NavBar = (props) => {
 				<nav className="navbar">
 					<div className="nav-background">
 						<ul className="nav-list">
-							<li
-								className={
-									active === "home"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
+							<li className={active === "home" ? "nav-item active" : "nav-item"}>
 								<Link to="/">Home</Link>
 							</li>
-							<li
-								className={
-									active === "about"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
+							<li className={active === "about" ? "nav-item active" : "nav-item"}>
 								<Link to="/about">About</Link>
 							</li>
-							<li
-								className={
-									active === "projects"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
+							<li className={active === "projects" ? "nav-item active" : "nav-item"}>
 								<Link to="/projects">Projects</Link>
 							</li>
-							<li
-								className={
-									active === "articles"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
+							<li className={active === "articles" ? "nav-item active" : "nav-item"}>
 								<Link to="/articles">Articles</Link>
 							</li>
-							<li
-								className={
-									active === "contact"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
+							<li className={active === "contact" ? "nav-item active" : "nav-item"}>
 								<Link to="/contact">Contact</Link>
+							</li>
+							<li className="nav-item">
+								<button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+									{theme === "light" ? "🌙" : "☀️"}
+								</button>
 							</li>
 						</ul>
 					</div>
